@@ -10,7 +10,7 @@ Vulkan Grass Rendering
 
 This project implements grass simulation and rendering in Vulkan, based on [Responsive Real-Time Grass Rendering for General 3D Scenes](https://www.cg.tuwien.ac.at/research/publications/2017/JAHRMANN-2017-RRTG/) by Jahrmann and Wimmer (2017). Grass blades are modeled as Bezier curves, animated by forces in a compute shader, and culled and tessellated.
 
-<video src="./img/wind.mp4" width="100%" controls></video>
+https://github.com/user-attachments/assets/3e086998-f5b2-4d99-b206-9cb865155f0e
 
 (Note: you may notice some jittering or flickering in the videos in this project, and these were caused by screen recording. Neither occurs when running the application only; they are merely weird artifacts of screen recording using the Snipping Tool.)
 
@@ -44,7 +44,7 @@ After applying the forces, the shader keeps tips on or above the local ground pl
 
 **Gravity + Recovery + Wind**
 
-<video src="./img/wind.mp4" width="100%" controls></video>
+https://github.com/user-attachments/assets/3e086998-f5b2-4d99-b206-9cb865155f0e
 
 ### Culling Tests
 
@@ -60,19 +60,19 @@ These recordings use the same final scene with all three culling tests enabled. 
 
 **Orientation culling**
 
-<video src="./img/orientation.mp4" width="100%" controls></video>
+https://github.com/user-attachments/assets/7fee7942-1312-4fee-a672-0183d65ca2f5
 
 Notice how the blades near the right edge of the screen get culled when the view vector becomes almost parallel to the blades' width directions.
 
 **View-frustum culling**
 
-<video src="./img/frustum.mp4" width="100%" controls></video>
+https://github.com/user-attachments/assets/0171e7b8-6957-4e97-801c-28af75ff58ba
 
 Notice how the blades nearer than the near-clip plane get culled. It is also easy to see the culling effect by toggling it on and off with the key `2`.
 
 **Distance culling**
 
-<video src="./img/distance.mp4" controls width="800"></video>
+https://github.com/user-attachments/assets/9ee46844-d962-4bbf-8fe2-b878b663219a
 
 ## Performance Analysis
 
