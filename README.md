@@ -10,7 +10,7 @@ Vulkan Grass Rendering
 
 This project implements grass simulation and rendering in Vulkan, based on [Responsive Real-Time Grass Rendering for General 3D Scenes](https://www.cg.tuwien.ac.at/research/publications/2017/JAHRMANN-2017-RRTG/) by Jahrmann and Wimmer (2017). Grass blades are modeled as Bezier curves, animated by forces in a compute shader, and culled and tessellated.
 
-![](img/wind.mp4)
+<video src="./img/wind.mp4" width="100%" controls></video>
 
 (Note: you may notice some jittering or flickering in the videos in this project, and these were caused by screen recording. Neither occurs when running the application only; they are merely weird artifacts of screen recording using the Snipping Tool.)
 
@@ -32,19 +32,19 @@ After applying the forces, the shader keeps tips on or above the local ground pl
 
 **No forces**
 
-![Grass without forces](img/no_force.png)
+![](img/no_force.png)
 
 **Gravity**
 
-![Grass with gravity](img/gravity.png)
+![](img/gravity.png)
 
 **Gravity + Recovery**
 
-![Grass with recovery](img/recovery.png)
+![](img/recovery.png)
 
 **Gravity + Recovery + Wind**
 
-![](img/wind.mp4)
+<video src="./img/wind.mp4" width="100%" controls></video>
 
 ### Culling Tests
 
@@ -60,19 +60,19 @@ These recordings use the same final scene with all three culling tests enabled. 
 
 **Orientation culling**
 
-![](img/orientation2.mp4)
+<video src="./img/orientation.mp4" width="100%" controls></video>
 
 Notice how the blades near the right edge of the screen get culled when the view vector becomes almost parallel to the blades' width directions.
 
 **View-frustum culling**
 
-![](img/frustum.mp4)
+<video src="./img/frustum.mp4" width="100%" controls></video>
 
 Notice how the blades nearer than the near-clip plane get culled. It is also easy to see the culling effect by toggling it on and off with the key `2`.
 
 **Distance culling**
 
-<video src="img/distance.mp4" controls width="800"></video>
+<video src="./img/distance.mp4" controls width="800"></video>
 
 ## Performance Analysis
 
